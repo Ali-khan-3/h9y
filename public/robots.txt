@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://h9ystudio.com/sitemap.xml
