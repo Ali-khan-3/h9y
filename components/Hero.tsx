@@ -33,13 +33,12 @@ export default function Hero({ title, subtitle, cta, fullHeight = true, backgrou
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/10 via-black/35 to-black/60" />
         </>
       )}
-      <div className="relative z-10 mx-auto max-w-4xl text-center">
+      <div className="relative z-10 mx-auto max-w-4xl text-center px-2 sm:px-0">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className={`text-balance ${backgroundUrl ? 'text-[var(--off-white)] drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]' : ''}`}
-        >
+          className={`text-balance text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight ${backgroundUrl ? 'text-[var(--off-white)] drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]' : ''}`}>
           {title}
         </motion.h1>
         {subtitle && (
@@ -47,7 +46,7 @@ export default function Hero({ title, subtitle, cta, fullHeight = true, backgrou
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-            className={`mt-6 text-lg md:text-xl max-w-2xl mx-auto ${
+            className={`mt-6 text-base sm:text-lg md:text-xl max-w-2xl mx-auto ${
               backgroundUrl ? 'text-[var(--off-white)]/90 drop-shadow-[0_1px_4px_rgba(0,0,0,0.55)]' : 'text-[var(--charcoal)]/70'
             }`}
           >

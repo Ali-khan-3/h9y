@@ -22,7 +22,7 @@ export default function ProjectCard({ slug, title, category, location, image, in
       className="group"
     >
       <Link href={`/projects/${slug}`} className="block">
-        <div className="relative aspect-[4/3] overflow-hidden bg-[var(--warm-stone)]">
+        <div className="relative aspect-[4/3] overflow-hidden bg-[var(--warm-stone)] w-full">
           <Image
             src={image}
             alt={title}
@@ -34,7 +34,7 @@ export default function ProjectCard({ slug, title, category, location, image, in
         </div>
         <div className="mt-4 space-y-1">
           <p className="text-xs uppercase tracking-wider text-[var(--muted-gold)]">{category}</p>
-          <h3 className="text-xl font-medium">{title}</h3>
+          <h3 className="text-lg md:text-xl font-medium">{title}</h3>
           {location && <p className="text-sm text-[var(--charcoal)]/60">{location}</p>}
         </div>
       </Link>

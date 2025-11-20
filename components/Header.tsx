@@ -32,11 +32,11 @@ export default function Header() {
         isScrolled ? 'bg-[var(--off-white)]/95 backdrop-blur-sm border-b border-[var(--warm-stone)]' : 'bg-transparent'
       }`}
     >
-      <nav className="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Main navigation">
-        <div className="flex items-center justify-between py-6">
+      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
+        <div className="flex items-center justify-between py-4 sm:py-6">
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5" aria-label="H9Y Studio home">
-              <span className="text-xl font-medium tracking-wider uppercase">
+              <span className="text-lg sm:text-xl font-medium tracking-wider uppercase">
                 H9Y Studio
               </span>
             </Link>
@@ -70,7 +70,7 @@ export default function Header() {
       </nav>
 
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 z-50">
+          <div className="lg:hidden fixed inset-0 z-50">
           <div className="fixed inset-0 bg-[var(--charcoal)]/80 backdrop-blur-sm" onClick={() => setMobileMenuOpen(false)} />
           <div className="fixed inset-y-0 right-0 w-full max-w-sm bg-[var(--off-white)] px-6 py-6 sm:ring-1 sm:ring-[var(--warm-stone)]">
             <div className="flex items-center justify-between">

@@ -21,9 +21,9 @@ export default function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-8 pt-12 sm:pt-16 lg:px-8 lg:pt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="space-y-6 md:space-y-8">
             <Link href="/" className="text-2xl font-medium tracking-wider uppercase">
               H9Y Studio
             </Link>
@@ -32,7 +32,7 @@ export default function Footer() {
               <br />
               Minimal by design, crafted end-to-end.
             </p>
-            <div className="flex space-x-6">
+            <div className="flex flex-wrap items-center gap-4">
               {footerNavigation.social.map((item) => {
                 const Icon = item.icon;
                 return (

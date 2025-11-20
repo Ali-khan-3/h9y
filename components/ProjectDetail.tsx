@@ -25,7 +25,7 @@ interface ProjectDetailProps {
 export default function ProjectDetail({ project }: ProjectDetailProps) {
   return (
     <>
-      <section className="pt-32 pb-16 px-6 lg:px-8">
+      <section className="pt-24 sm:pt-28 lg:pt-32 pb-16 px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -46,7 +46,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
       </section>
 
       <section className="px-6 lg:px-8 pb-16">
-        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-7xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -63,8 +63,8 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             />
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-16">
-            <div className="lg:col-span-2 space-y-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 mt-8 lg:mt-16">
+            <div className="lg:col-span-2 space-y-8 lg:space-y-12">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -134,7 +134,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16"
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-8 md:mt-16"
           >
             {project.images.slice(1).map((image: string, index: number) => (
               <div key={index} className="relative aspect-[4/3] bg-[var(--warm-stone)]">
